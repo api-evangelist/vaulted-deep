@@ -1,0 +1,41 @@
+generated: '2026-09-02'
+method: probed
+source: https://vaulteddeep.com/.well-known/
+note: >-
+  Every named /.well-known/ path was probed against the only host Vaulted Deep
+  operates (vaulteddeep.com); all seven returned HTTP 404 from the WordPress
+  404 handler, so nothing was saved and NO WellKnown/SecurityTxt pointer is
+  emitted in apis.yml. This file records a verified absence, not a presence.
+  No api.* / docs.* / developers.* subdomain resolves in DNS, so there is no
+  second host to probe.
+hosts:
+- host: vaulteddeep.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+unresolved_hosts:
+- host: api.vaulteddeep.com
+  status: NXDOMAIN
+- host: docs.vaulteddeep.com
+  status: NXDOMAIN
+- host: developers.vaulteddeep.com
+  status: NXDOMAIN

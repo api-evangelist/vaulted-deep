@@ -1,7 +1,16 @@
 aid: vaulted-deep
 name: Vaulted Deep
-description: 'Vaulted Deep is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Vaulted Deep is a permanent carbon removal and organic waste disposal
+  company that injects carbon-filled organic waste — biosolids, agricultural byproducts
+  and manure, and pulp and paper sludge — thousands of feet underground as a slurry,
+  using patented geologic slurry sequestration technology adapted from oil and gas
+  practice so the carbon is trapped permanently beneath impermeable rock. Spun out
+  of Advantek Waste Management Services in 2023 and co-founded by Julia Reichelstein
+  and Omar Abou-Sayed, it operates the Great Plains site in Hutchinson, Kansas and
+  the Terminal Island site in Los Angeles, California, serving municipal wastewater
+  utilities and agricultural operators while selling durable carbon removal credits
+  to corporate buyers. It publishes no public API, SDK, or developer program.'
+image: https://vaulteddeep.com/wp-content/uploads/2026/08/Social-share.jpg
 url: https://raw.githubusercontent.com/api-evangelist/vaulted-deep/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
@@ -12,6 +21,14 @@ created: '2026-09-02'
 modified: '2026-09-02'
 tags:
 - Company
+- Carbon Removal
+- Carbon Dioxide Removal
+- Climate
+- Waste Management
+- Biosolids
+- Geologic Sequestration
+- Sustainability
+- Environment
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +36,44 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/vaulted-deep-domain-security.yml
 - type: Website
-  url: https://forgeglobal.com/vaulted-deep_stock/
+  url: https://vaulteddeep.com/
+- type: PrivacyPolicy
+  url: https://vaulteddeep.com/privacy-cookie-policy/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/vaulted-deep
+- type: Twitter
+  url: https://x.com/VaultedDeep
+- type: LLMsTxt
+  url: llms/vaulted-deep-llms.txt
+- type: Plans
+  url: plans/vaulted-deep-plans-pricing.yml
+x-enrichment:
+  date: '2026-09-02'
+  status: minimal
+  artifacts_added: 4
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    Vaulted Deep operates deep-well organic-waste injection sites, and its whole
+    public surface is a three-page WordPress marketing site whose only
+    machine-readable endpoint is the default wp-json CMS index - the
+    AI-accelerated Site Development Platform it markets is internal tooling for
+    developing its own wells, not a product with an API, and no api., docs. or
+    developers. subdomain resolves in DNS.
+  evidence:
+  - url: https://vaulteddeep.com/openapi.json
+    status: 404
+  - url: https://vaulteddeep.com/llms.txt
+    status: 404
+  - url: https://vaulteddeep.com/.well-known/agent-card.json
+    status: 404
+  - url: https://vaulteddeep.com/wp-json/
+    status: 200
+  - url: https://api.github.com/orgs/vaulted-deep
+    status: 404
+  checked: '2026-09-02'

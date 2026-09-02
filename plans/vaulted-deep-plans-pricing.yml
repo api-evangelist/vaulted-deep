@@ -1,0 +1,25 @@
+generated: '2026-09-02'
+method: searched
+source: https://vaulteddeep.com/
+plan_count: 0
+currency: null
+plans: []
+note: >-
+  Vaulted Deep publishes no plans, tiers, or price list. The company sells two
+  things — organic waste disposal capacity to municipal wastewater utilities and
+  agricultural operators, and durable carbon removal credits to corporate buyers
+  — and both are transacted as bilateral offtake contracts through a contact
+  form on vaulteddeep.com. The full public site is three pages (homepage,
+  privacy/cookie policy, and a leftover lorem-ipsum template page); there is no
+  pricing page, no rate card, and no per-tonne price stated anywhere on it. A
+  former /carbon-removal-buyers/ page now serves the homepage (HTTP 200,
+  <title>Homepage - Vaulted Deep</title>) after the August 2026 site rebuild.
+  Recorded as an honest zero rather than omitted.
+evidence:
+- url: https://vaulteddeep.com/
+  status: 200
+- url: https://vaulteddeep.com/carbon-removal-buyers/
+  status: 200
+  note: soft-redirect — renders the homepage, not a buyer/pricing page
+- url: https://vaulteddeep.com/payment/
+  status: 404
